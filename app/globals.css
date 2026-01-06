@@ -58,8 +58,20 @@
   }
 }
 
-/* Image optimization and performance enhancements */
+/* Professional hover effects */
 @layer utilities {
+  .garden-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(34, 197, 94, 0.1);
+  }
+
+  .garden-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(34, 197, 94, 0.1);
+    border-color: rgba(34, 197, 94, 0.2);
+  }
+
+  /* Image optimization and performance enhancements */
   .image-render-optimize {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;

@@ -24,7 +24,7 @@ export const metadata = {
     type: "website",
     locale: "en_US",
   },
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -37,7 +37,7 @@ export default function RootLayout({
       <body className={`${inter.className} min-h-screen flex flex-col`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Header />
-          {children}
+          <div className="flex-1">{children}</div>
           <Footer />
         </ThemeProvider>
       </body>
@@ -47,7 +47,7 @@ export default function RootLayout({
 
 function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white">
+    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur-sm">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <Mountain className="h-6 w-6 text-green-600" />
