@@ -1,10 +1,9 @@
 import type React from "react"
 import { Inter } from "next/font/google"
 import Link from "next/link"
-import { Mountain, Phone, Menu, Mail, MapPin } from "lucide-react"
+import { Mountain, Phone, Mail, MapPin } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 import "./globals.css"
 
@@ -50,7 +49,7 @@ function Header() {
           <Mountain className="h-6 w-6 text-green-600" />
           <span className="text-lg font-bold">Holly&apos;s Enchanted Gardens</span>
         </Link>
-        <nav className="hidden md:flex gap-6">
+        <nav className="flex gap-6">
           <Link href="/" className="text-sm font-medium hover:text-green-600 hover:underline underline-offset-4">
             Home
           </Link>
@@ -73,36 +72,6 @@ function Header() {
             <Button className="bg-green-600 hover:bg-green-700 text-white">Request a Quote</Button>
           </Link>
         </div>
-        <Sheet>
-          <SheetTrigger asChild className="md:hidden">
-            <Button variant="outline" size="icon">
-              <Menu className="h-5 w-5" />
-              <span className="sr-only">Toggle menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="right">
-            <div className="flex flex-col gap-6 pt-6">
-              <Link href="/" className="text-lg font-medium hover:text-green-600">
-                Home
-              </Link>
-              <Link href="/services" className="text-lg font-medium hover:text-green-600">
-                Services
-              </Link>
-              <Link href="/contact" className="text-lg font-medium hover:text-green-600">
-                Contact
-              </Link>
-              <div className="flex flex-col gap-2 mt-4">
-                <a href="tel:+14147088909" className="flex items-center gap-2 text-sm font-medium hover:text-green-600">
-                  <Phone className="h-4 w-4" />
-                  (414) 708-8909
-                </a>
-                <Link href="/quote">
-                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white">Request a Quote</Button>
-                </Link>
-              </div>
-            </div>
-          </SheetContent>
-        </Sheet>
       </div>
     </header>
   )
