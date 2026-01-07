@@ -3,7 +3,6 @@ import { Inter } from "next/font/google"
 import Link from "next/link"
 import { Mountain, Phone, Menu, Mail, MapPin } from "lucide-react"
 
-import { ThemeProvider } from "@/components/theme-provider"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
@@ -35,11 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} min-h-screen flex flex-col`}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <Header />
-          <div className="flex-1">{children}</div>
-          <Footer />
-        </ThemeProvider>
+        <Header />
+        <div className="flex-1">{children}</div>
+        <Footer />
       </body>
     </html>
   )
