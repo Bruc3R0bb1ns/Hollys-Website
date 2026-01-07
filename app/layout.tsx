@@ -3,8 +3,6 @@ import { Inter } from "next/font/google"
 import Link from "next/link"
 import { Mountain, Phone, Mail, MapPin } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
-
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -68,8 +66,11 @@ function Header() {
             <Phone className="h-4 w-4" />
             (414) 708-8909
           </a>
-          <Link href="/quote">
-            <Button className="bg-green-600 hover:bg-green-700 text-white">Request a Quote</Button>
+          <Link
+            href="/quote"
+            className="inline-flex items-center justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600"
+          >
+            Request a Quote
           </Link>
         </div>
       </div>

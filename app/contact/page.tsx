@@ -3,7 +3,6 @@
 import { MapPin, Phone, Mail, Clock, Users } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 
 export default function ContactPage() {
   return (
@@ -76,7 +75,7 @@ export default function ContactPage() {
                   <Mail className="mt-1 h-5 w-5 text-green-600 flex-shrink-0" />
                   <div>
                     <h3 className="font-medium">Email</h3>
-                    <p className="text-sm text-gray-600">We'll respond within 24 hours</p>
+                    <p className="text-sm text-gray-600">We&apos;ll respond within 24 hours</p>
                     <a href="mailto:hollysenchantedgardens@gmail.com" className="text-green-600 hover:underline">
                       hollysenchantedgardens@gmail.com
                     </a>
@@ -154,8 +153,8 @@ export default function ContactPage() {
                   />
                 </div>
                 <p className="text-sm text-gray-600">
-                  Located in the heart of Grafton, Wisconsin, we're perfectly positioned to serve the greater Milwaukee
-                  area.
+                  Located in the heart of Grafton, Wisconsin, we&apos;re perfectly positioned to serve the greater
+                  Milwaukee area.
                 </p>
               </div>
             </div>
@@ -170,12 +169,13 @@ export default function ContactPage() {
               <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
                 <h3 className="font-semibold text-green-800 mb-2">Get Your Free Quote</h3>
                 <p className="text-sm text-gray-600 mb-4">
-                  Fill out our detailed quote request form and we'll get back to you within 24 hours.
+                  Fill out our detailed quote request form and we&apos;ll get back to you within 24 hours.
                 </p>
-                <Link href="/quote">
-                  <Button className="bg-green-600 hover:bg-green-700 text-white w-full">
-                    Go to Quote Request Form
-                  </Button>
+                <Link
+                  href="/quote"
+                  className="inline-flex items-center justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 w-full"
+                >
+                  Go to Quote Request Form
                 </Link>
               </div>
 

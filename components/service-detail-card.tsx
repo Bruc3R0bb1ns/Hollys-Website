@@ -3,8 +3,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { Check } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
-
 interface ServiceDetailCardProps {
   icon: React.ReactNode
   title: string
@@ -59,8 +57,11 @@ export function ServiceDetailCard({
           </div>
         )}
 
-        <Link href="/quote">
-          <Button className="bg-green-600 hover:bg-green-700 text-white">Request a Quote</Button>
+        <Link
+          href="/quote"
+          className="inline-flex items-center justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600"
+        >
+          Request a Quote
         </Link>
       </div>
 

@@ -2,7 +2,6 @@ import Link from "next/link"
 import { ChevronRight, Leaf, Snowflake, Wind, Calendar, Droplets, Gift, Phone } from "lucide-react"
 import Image from "next/image"
 
-import { Button } from "@/components/ui/button"
 import { ServiceDetailCard } from "@/components/service-detail-card"
 
 export default function ServicesPage() {
@@ -30,10 +29,11 @@ export default function ServicesPage() {
             <p className="text-lg text-white/90 md:text-xl animate-fade-in">
               Comprehensive landscaping solutions for every season of the year
             </p>
-            <Link href="/quote" className="animate-fade-in">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
-                Request a Quote <ChevronRight className="ml-2 h-4 w-4" />
-              </Button>
+            <Link
+              href="/quote"
+              className="inline-flex items-center justify-center rounded-md bg-green-600 px-6 py-3 text-base font-medium text-white shadow-lg transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 animate-fade-in"
+            >
+              Request a Quote <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
         </div>
@@ -159,15 +159,17 @@ export default function ServicesPage() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 min-[400px]:flex-row justify-center">
-              <Link href="/quote">
-                <Button size="lg" className="bg-white text-green-800 hover:bg-green-100">
-                  Request a Quote
-                </Button>
+              <Link
+                href="/quote"
+                className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-medium text-green-800 shadow-lg transition-colors hover:bg-green-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              >
+                Request a Quote
               </Link>
-              <a href="tel:+14141234567">
-                <Button size="lg" variant="outline" className="border-white text-white bg-transparent">
-                  <Phone className="mr-2 h-4 w-4" /> (414) 708-8909
-                </Button>
+              <a
+                href="tel:+14147088909"
+                className="inline-flex items-center justify-center rounded-md border border-white bg-transparent px-6 py-3 text-base font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              >
+                <Phone className="mr-2 h-4 w-4" /> (414) 708-8909
               </a>
             </div>
           </div>

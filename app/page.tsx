@@ -2,7 +2,6 @@ import Link from "next/link"
 import { ChevronRight, MapPin, Phone, Leaf, Wind, Calendar, Users } from "lucide-react"
 import Image from "next/image"
 
-import { Button } from "@/components/ui/button"
 import { TestimonialCard } from "@/components/testimonial-card"
 import { ServiceCard } from "@/components/service-card"
 
@@ -35,10 +34,11 @@ export default function Home() {
               Professional landscape design and seasonal service experts serving Milwaukee, Washington, Ozaukee, and
               Waukesha counties with vibrant, year-round beauty.
             </p>
-            <Link href="/quote" className="animate-fade-in">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
-                Request a Quote <ChevronRight className="ml-2 h-4 w-4" />
-              </Button>
+            <Link
+              href="/quote"
+              className="inline-flex items-center justify-center rounded-md bg-green-600 px-6 py-3 text-base font-medium text-white shadow-lg transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 animate-fade-in"
+            >
+              Request a Quote <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
         </div>
@@ -91,16 +91,17 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/services">
-                  <Button
-                    variant="outline"
-                    className="border-green-600 text-green-600 hover:bg-green-50 bg-transparent"
-                  >
-                    Our Services
-                  </Button>
+                <Link
+                  href="/services"
+                  className="inline-flex items-center justify-center rounded-md border border-green-600 bg-transparent px-4 py-2 text-sm font-medium text-green-600 shadow-sm transition-colors hover:bg-green-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600"
+                >
+                  Our Services
                 </Link>
-                <Link href="/quote">
-                  <Button className="bg-green-600 hover:bg-green-700 text-white">Get in Touch</Button>
+                <Link
+                  href="/quote"
+                  className="inline-flex items-center justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600"
+                >
+                  Get in Touch
                 </Link>
               </div>
             </div>
@@ -155,10 +156,11 @@ export default function Home() {
             />
           </div>
           <div className="flex justify-center">
-            <Link href="/services">
-              <Button className="bg-green-600 hover:bg-green-700 text-white">
-                View All Services <ChevronRight className="ml-2 h-4 w-4" />
-              </Button>
+            <Link
+              href="/services"
+              className="inline-flex items-center justify-center rounded-md bg-green-600 px-6 py-3 text-base font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600"
+            >
+              View All Services <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
         </div>
@@ -253,19 +255,17 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 min-[400px]:flex-row justify-center">
-              <Link href="/quote">
-                <Button size="lg" className="bg-white text-green-800 hover:bg-green-100">
-                  Request a Quote
-                </Button>
+              <Link
+                href="/quote"
+                className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-medium text-green-800 shadow-lg transition-colors hover:bg-green-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              >
+                Request a Quote
               </Link>
-              <a href="tel:+14147088909">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-green-700 bg-transparent"
-                >
-                  <Phone className="mr-2 h-4 w-4" /> (414) 708-8909
-                </Button>
+              <a
+                href="tel:+14147088909"
+                className="inline-flex items-center justify-center rounded-md border border-white bg-transparent px-6 py-3 text-base font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              >
+                <Phone className="mr-2 h-4 w-4" /> (414) 708-8909
               </a>
             </div>
           </div>
